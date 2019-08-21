@@ -1,0 +1,79 @@
+.main{
+    padding-top: 50px;
+}
+
+.container{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.giphy-form{
+    margin-bottom: 15px;
+}
+.gif-gallery, .gif-gallery span{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gif-item{
+    width: calc(25% - 10px);
+    height: 200px;
+    margin: 5px 0;
+}
+
+.gif-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.load-more-btn{
+    margin: 15px 0;
+}
+.load-more-btn button{
+    width: 100%;
+}
+@media (min-width: 1140px){
+    .container{
+        width: 1200px;
+    }
+}
+
+@media (min-width: 768px){
+    .container{
+        width: 800px;
+    }
+}
+@media (max-width: 767px){
+    .gif-item{
+        width: calc(50% - 10px);
+    }
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity 1ms ease-in;
+}
